@@ -6,6 +6,7 @@ import 'august5th/tapboxa.dart';
 import 'august5th/tapboxb.dart';
 import 'august5th/tapboxc.dart';
 import 'august5th/cupertino.dart';
+import 'august5th/textdemo.dart';
 
 void main() => runApp(Application());
 //void main() {
@@ -31,12 +32,13 @@ class Application extends StatelessWidget {
         primarySwatch: Colors.blueGrey,
       ),
       routes: {
-        "about" : (context) => About(),
-        "counter" : (context) => CounterWidget(),
-        "tapboxa" : (context) => TapBoxA(),
-        "tapboxb" : (context) => TapBoxBParentWidget(),
-        "tapboxc" : (context) => CParentWidget(),
-        "cupertino" : (context) => CupertinoWidget(),
+        "about": (context) => About(),
+        "counter": (context) => CounterWidget(),
+        "tapboxa": (context) => TapBoxA(),
+        "tapboxb": (context) => TapBoxBParentWidget(),
+        "tapboxc": (context) => CParentWidget(),
+        "cupertino": (context) => CupertinoWidget(),
+        "textdemo": (context) => TextDemo(),
       },
       home: MyHomePage(title: 'Flutter Demo Home Page'),
     );

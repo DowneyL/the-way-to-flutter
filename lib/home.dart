@@ -75,8 +75,13 @@ class _MyHomePageState extends State<MyHomePage> {
               style: Theme.of(context).textTheme.display1,
             ),
             FlatButton(
+              child: Text("text demo"),
+              onPressed: () {
+                Navigator.pushNamed(context, "textdemo");
+              },
+            ),
+            FlatButton(
               child: Text("about me"),
-              textColor: Colors.blue,
               onPressed: () {
                 Navigator.of(context).pushNamed("about", arguments: "heng.li");
 //                Navigator.pushNamed(context, "about");
