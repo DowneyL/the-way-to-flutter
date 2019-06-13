@@ -8,6 +8,8 @@ import 'august5th/tapboxc.dart';
 import 'august5th/cupertino.dart';
 import 'august5th/textdemo.dart';
 import 'august5th/button_demo.dart';
+import 'august5th/image_demo.dart';
+import 'august5th/icon_demo.dart';
 
 void main() => runApp(Application());
 //void main() {
@@ -41,6 +43,8 @@ class Application extends StatelessWidget {
         "cupertino": (context) => CupertinoWidget(),
         "textdemo": (context) => TextDemo(),
         "button_demo": (context) => ButtonDemo(),
+        "image_demo": (context) => ImageDemo(),
+        "icon_demo": (context) => IconDemo(),
       },
       home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
