@@ -75,6 +75,12 @@ class _MyHomePageState extends State<MyHomePage> {
               style: Theme.of(context).textTheme.display1,
             ),
             FlatButton(
+              child: Text("switch checkbox demo"),
+              onPressed: () {
+                Navigator.pushNamed(context, "switch_checkbox_demo");
+              },
+            ),
+            FlatButton(
               child: Text("icon demo"),
               onPressed: () {
                 Navigator.pushNamed(context, "icon_demo");
@@ -92,53 +98,53 @@ class _MyHomePageState extends State<MyHomePage> {
                 Navigator.pushNamed(context, "button_demo");
               },
             ),
-            FlatButton(
-              child: Text("text demo"),
-              onPressed: () {
-                Navigator.pushNamed(context, "textdemo");
-              },
-            ),
-            FlatButton(
-              child: Text("about me"),
-              onPressed: () {
-                Navigator.of(context).pushNamed("about", arguments: "heng.li");
-//                Navigator.pushNamed(context, "about");
-//                Navigator.push(context, new MaterialPageRoute(builder: (context) {
-//                  return new About();
-//                }));
-              },
-            ),
-            FlatButton(
-              child: Text("counter"),
-              onPressed: () {
-                Navigator.of(context).pushNamed("counter");
-              },
-            ),
-            FlatButton(
-              child: Text("tap box a"),
-              onPressed: () {
-                Navigator.pushNamed(context, "tapboxa");
-              },
-            ),
-            FlatButton(
-              child: Text("tap box b"),
-              onPressed: () {
-                Navigator.pushNamed(context, "tapboxb");
-              },
-            ),
-            FlatButton(
-              child: Text("tap box c"),
-              onPressed: () {
-                Navigator.pushNamed(context, "tapboxc");
-              },
-            ),
-            FlatButton(
-              child: Text("cupertino"),
-              onPressed: () {
-                Navigator.pushNamed(context, "cupertino");
-              },
-            ),
-            RandomWord(),
+//            FlatButton(
+//              child: Text("text demo"),
+//              onPressed: () {
+//                Navigator.pushNamed(context, "textdemo");
+//              },
+//            ),
+//            FlatButton(
+//              child: Text("about me"),
+//              onPressed: () {
+//                Navigator.of(context).pushNamed("about", arguments: "heng.li");
+////                Navigator.pushNamed(context, "about");
+////                Navigator.push(context, new MaterialPageRoute(builder: (context) {
+////                  return new About();
+////                }));
+//              },
+//            ),
+//            FlatButton(
+//              child: Text("counter"),
+//              onPressed: () {
+//                Navigator.of(context).pushNamed("counter");
+//              },
+//            ),
+//            FlatButton(
+//              child: Text("tap box a"),
+//              onPressed: () {
+//                Navigator.pushNamed(context, "tapboxa");
+//              },
+//            ),
+//            FlatButton(
+//              child: Text("tap box b"),
+//              onPressed: () {
+//                Navigator.pushNamed(context, "tapboxb");
+//              },
+//            ),
+//            FlatButton(
+//              child: Text("tap box c"),
+//              onPressed: () {
+//                Navigator.pushNamed(context, "tapboxc");
+//              },
+//            ),
+//            FlatButton(
+//              child: Text("cupertino"),
+//              onPressed: () {
+//                Navigator.pushNamed(context, "cupertino");
+//              },
+//            ),
+//            RandomWord(),
           ],
         ),
       ),
