@@ -11,6 +11,8 @@ import 'august5th/button_demo.dart';
 import 'august5th/image_demo.dart';
 import 'august5th/icon_demo.dart';
 import 'august5th/switch_checkbox_demo.dart';
+import 'august5th/text_field_demo.dart';
+import 'august5th/text_focus_demo.dart';
 
 void main() => runApp(Application());
 //void main() {
@@ -47,6 +49,8 @@ class Application extends StatelessWidget {
         "image_demo": (context) => ImageDemo(),
         "icon_demo": (context) => IconDemo(),
         "switch_checkbox_demo": (context) => SwitchAndCheckboxDemoWidget(),
+        "text_input_demo": (context) => TextFieldDemoWidget(),
+        "text_focus_demo": (context) => TextFocusDemoWidget(),
       },
       home: MyHomePage(title: 'Flutter Demo Home Page'),
     );

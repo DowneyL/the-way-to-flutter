@@ -47,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body: Center(
+      body: Container(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
         child: Column(
@@ -65,39 +65,51 @@ class _MyHomePageState extends State<MyHomePage> {
           // center the children vertically; the main axis here is the vertical
           // axis because Columns are vertical (the cross axis would be
           // horizontal).
-          mainAxisAlignment: MainAxisAlignment.center,
+//          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display1,
-            ),
+//            Text(
+//              'You have pushed the button this many times:',
+//            ),
+//            Text(
+//              '$_counter',
+//              style: Theme.of(context).textTheme.display1,
+//            ),
             FlatButton(
-              child: Text("switch checkbox demo"),
+              child: Text("text focus demo"),
               onPressed: () {
-                Navigator.pushNamed(context, "switch_checkbox_demo");
+                Navigator.pushNamed(context, "text_focus_demo");
               },
             ),
             FlatButton(
-              child: Text("icon demo"),
               onPressed: () {
-                Navigator.pushNamed(context, "icon_demo");
+                Navigator.pushNamed(context, "text_input_demo");
               },
+              child: Text("text input button"),
             ),
-            FlatButton(
-              child: Text("image demo"),
-              onPressed: () {
-                Navigator.pushNamed(context, "image_demo");
-              },
-            ),
-            FlatButton(
-              child: Text("button demo"),
-              onPressed: () {
-                Navigator.pushNamed(context, "button_demo");
-              },
-            ),
+//            FlatButton(
+//              child: Text("switch checkbox demo"),
+//              onPressed: () {
+//                Navigator.pushNamed(context, "switch_checkbox_demo");
+//              },
+//            ),
+//            FlatButton(
+//              child: Text("icon demo"),
+//              onPressed: () {
+//                Navigator.pushNamed(context, "icon_demo");
+//              },
+//            ),
+//            FlatButton(
+//              child: Text("image demo"),
+//              onPressed: () {
+//                Navigator.pushNamed(context, "image_demo");
+//              },
+//            ),
+//            FlatButton(
+//              child: Text("button demo"),
+//              onPressed: () {
+//                Navigator.pushNamed(context, "button_demo");
+//              },
+//            ),
 //            FlatButton(
 //              child: Text("text demo"),
 //              onPressed: () {
