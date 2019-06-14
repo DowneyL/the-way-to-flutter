@@ -14,6 +14,7 @@ import 'august5th/switch_checkbox_demo.dart';
 import 'august5th/text_field_demo.dart';
 import 'august5th/text_focus_demo.dart';
 import 'august5th/form_demo.dart';
+import 'august5th_widget/column_row_demo.dart';
 
 void main() => runApp(Application());
 //void main() {
@@ -53,6 +54,7 @@ class Application extends StatelessWidget {
         "text_input_demo": (context) => TextFieldDemoWidget(),
         "text_focus_demo": (context) => TextFocusDemoWidget(),
         "form_demo": (context) => FormDemoRoute(),
+        "column_row_demo": (context) => ColumnRowDemoRoute(),
       },
       home: MyHomePage(title: 'Flutter Demo Home Page'),
     );

@@ -75,23 +75,29 @@ class _MyHomePageState extends State<MyHomePage> {
 //              style: Theme.of(context).textTheme.display1,
 //            ),
             FlatButton(
-              child: Text("form demo"),
+              child: Text("column row demo"),
               onPressed: () {
-                Navigator.pushNamed(context, "form_demo");
+                Navigator.pushNamed(context, "column_row_demo");
               },
             ),
-            FlatButton(
-              child: Text("text focus demo"),
-              onPressed: () {
-                Navigator.pushNamed(context, "text_focus_demo");
-              },
-            ),
-            FlatButton(
-              onPressed: () {
-                Navigator.pushNamed(context, "text_input_demo");
-              },
-              child: Text("text input button"),
-            ),
+//            FlatButton(
+//              child: Text("form demo"),
+//              onPressed: () {
+//                Navigator.pushNamed(context, "form_demo");
+//              },
+//            ),
+//            FlatButton(
+//              child: Text("text focus demo"),
+//              onPressed: () {
+//                Navigator.pushNamed(context, "text_focus_demo");
+//              },
+//            ),
+//            FlatButton(
+//              onPressed: () {
+//                Navigator.pushNamed(context, "text_input_demo");
+//              },
+//              child: Text("text input button"),
+//            ),
 //            FlatButton(
 //              child: Text("switch checkbox demo"),
 //              onPressed: () {
