@@ -24,6 +24,7 @@ import 'august5th_widget/constrained_box_demo.dart';
 import 'august5th_widget/decorated_box.dart';
 import 'august5th_widget/transform_demo.dart';
 import 'august5th_widget/container_demo.dart';
+import 'august5th_widget/scaffold_demo.dart';
 
 void main() => runApp(Application());
 //void main() {
@@ -73,6 +74,7 @@ class Application extends StatelessWidget {
         "decorated_box_demo": (context) => DecoratedBoxDemoRoute(),
         "transform_demo": (context) => TransformDemoRoute(),
         "container_demo": (context) => ContainerDemoRoute(),
+        "scaffold_demo": (context) => ScaffoldDemoRoute(),
       },
       home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
