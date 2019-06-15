@@ -27,6 +27,7 @@ import 'august5th_widget/container_demo.dart';
 import 'august5th_widget/scaffold_demo.dart';
 import 'august5th_widget/single_scroll_demo.dart';
 import 'august5th_widget/list_view_demo.dart';
+import 'august5th_widget/infinite_list_view.dart';
 
 void main() => runApp(Application());
 //void main() {
@@ -79,6 +80,7 @@ class Application extends StatelessWidget {
         "scaffold_demo": (context) => ScaffoldDemoRoute(),
         "single_scroll_demo": (context) => SingleChildScrollViewDemoRoute(),
         "list_view_demo": (context) => ListViewDemoRoute(),
+        "infinite_list_view": (context) => InfiniteListView(),
       },
       home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
