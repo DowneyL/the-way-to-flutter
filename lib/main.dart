@@ -22,6 +22,7 @@ import 'august5th_widget/stack_pos_demo.dart';
 import 'august5th_widget/padding_demo.dart';
 import 'august5th_widget/constrained_box_demo.dart';
 import 'august5th_widget/decorated_box.dart';
+import 'august5th_widget/transform_demo.dart';
 
 void main() => runApp(Application());
 //void main() {
@@ -69,6 +70,7 @@ class Application extends StatelessWidget {
         "padding_demo": (context) => PaddingDemoRoute(),
         "constrained_box_demo": (context) => ConstrainedBoxDemoRouter(),
         "decorated_box_demo": (context) => DecoratedBoxDemoRoute(),
+        "transform_demo": (context) => TransformDemoRoute(),
       },
       home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
