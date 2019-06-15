@@ -29,6 +29,7 @@ import 'august5th_widget/single_scroll_demo.dart';
 import 'august5th_widget/list_view_demo.dart';
 import 'august5th_widget/infinite_list_view.dart';
 import 'august5th_widget/grid_view_demo.dart';
+import 'august5th_widget/custom_scroll_demo.dart';
 
 void main() => runApp(Application());
 //void main() {
@@ -83,6 +84,7 @@ class Application extends StatelessWidget {
         "list_view_demo": (context) => ListViewDemoRoute(),
         "infinite_list_view": (context) => InfiniteListView(),
         "grid_view_demo": (context) => GridViewDemoRoute(),
+        "custom_scroll_demo": (context) => CustomScrollViewDemoRoute(),
       },
       home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
