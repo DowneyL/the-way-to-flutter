@@ -75,11 +75,17 @@ class _MyHomePageState extends State<MyHomePage> {
 //              style: Theme.of(context).textTheme.display1,
 //            ),
             FlatButton(
-              child: Text("constrained box demo"),
+              child: Text("decorated box demo"),
               onPressed: () {
-                Navigator.pushNamed(context, "constrained_box_demo");
+                Navigator.pushNamed(context, "decorated_box_demo");
               },
             ),
+//            FlatButton(
+//              child: Text("constrained box demo"),
+//              onPressed: () {
+//                Navigator.pushNamed(context, "constrained_box_demo");
+//              },
+//            ),
 //            FlatButton(
 //              child: Text("padding demo"),
 //              onPressed: () {
