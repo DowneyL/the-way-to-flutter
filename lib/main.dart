@@ -16,6 +16,8 @@ import 'august5th/text_focus_demo.dart';
 import 'august5th/form_demo.dart';
 import 'august5th_widget/column_row_demo.dart';
 import 'august5th_widget/flex_demo.dart';
+import 'august5th_widget/wrap_demo.dart';
+import 'august5th_widget/flow_demo.dart';
 
 void main() => runApp(Application());
 //void main() {
@@ -57,6 +59,8 @@ class Application extends StatelessWidget {
         "form_demo": (context) => FormDemoRoute(),
         "column_row_demo": (context) => ColumnRowDemoRoute(),
         "flex_demo": (context) => FlexLayoutDemoRoute(),
+        "wrap_demo": (context) => WrapDemoRoute(),
+        "flow_demo": (context) => FlowDemoRoute(),
       },
       home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
