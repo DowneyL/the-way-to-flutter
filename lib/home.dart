@@ -75,11 +75,17 @@ class _MyHomePageState extends State<MyHomePage> {
 //              style: Theme.of(context).textTheme.display1,
 //            ),
             FlatButton(
-              child: Text("custom scroll demo"),
+              child: Text("scroll controller demo"),
               onPressed: () {
-                Navigator.pushNamed(context, "custom_scroll_demo");
+                Navigator.pushNamed(context, "scroll_controller_demo");
               },
             ),
+//            FlatButton(
+//              child: Text("custom scroll demo"),
+//              onPressed: () {
+//                Navigator.pushNamed(context, "custom_scroll_demo");
+//              },
+//            ),
 //            FlatButton(
 //              child: Text("grid view demo"),
 //              onPressed: () {
