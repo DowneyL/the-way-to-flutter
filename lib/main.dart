@@ -31,6 +31,7 @@ import 'august5th_widget/infinite_list_view.dart';
 import 'august5th_widget/grid_view_demo.dart';
 import 'august5th_widget/custom_scroll_demo.dart';
 import 'august5th_widget/scroll_controller_demo.dart';
+import 'august5th_widget/scroll_notification_demo.dart';
 
 void main() => runApp(Application());
 //void main() {
@@ -87,6 +88,7 @@ class Application extends StatelessWidget {
         "grid_view_demo": (context) => GridViewDemoRoute(),
         "custom_scroll_demo": (context) => CustomScrollViewDemoRoute(),
         "scroll_controller_demo": (context) => ScrollControllerDemoRoute(),
+        "scroll_notification_demo": (context) => ScrollNotificationDemoRoute(),
       },
       home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
