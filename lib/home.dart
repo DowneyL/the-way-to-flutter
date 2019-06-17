@@ -75,11 +75,17 @@ class _MyHomePageState extends State<MyHomePage> {
 //              style: Theme.of(context).textTheme.display1,
 //            ),
             FlatButton(
-              child: Text("gesture detector demo"),
+              child: Text("notificaiton demo"),
               onPressed: () {
-                Navigator.pushNamed(context, "gesture_detector_demo");
+                Navigator.pushNamed(context, "notification_demo");
               },
             ),
+//            FlatButton(
+//              child: Text("gesture detector demo"),
+//              onPressed: () {
+//                Navigator.pushNamed(context, "gesture_detector_demo");
+//              },
+//            ),
 //            RaisedButton(
 //              child: Text("pointer demo"),
 //              colorBrightness: Brightness.dark,

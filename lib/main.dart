@@ -35,6 +35,7 @@ import 'august5th_widget/scroll_notification_demo.dart';
 import 'august5th_widget/inherited_demo.dart';
 import 'august5th_widget/pointer_demo.dart';
 import 'august5th_widget/gesture_detector_demo.dart';
+import 'august5th/notification_demo.dart';
 
 void main() => runApp(Application());
 //void main() {
@@ -95,6 +96,7 @@ class Application extends StatelessWidget {
         "inherited_demo": (context) => InheritedWidgetDemoRoute(),
         "pointer_demo": (context) => PointerDemoRoute(),
         "gesture_detector_demo": (context) => GestureDetectorDemoRoute(),
+        "notification_demo": (context) => NotificationRoute(),
       },
       home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
