@@ -45,6 +45,10 @@ flutter:
   assets:
     - assets/images/mobu.jpeg
     - assets/images/desktop.jpg
+    - assets/images/image_01.png
+    - assets/images/image_02.jpg
+    - assets/images/image_03.jpg
+    - assets/images/image_04.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
@@ -71,3 +75,20 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
+  fonts:
+    - family: SF-Pro-Text-Regular
+      fonts:
+        - asset: assets/fonts/SF-Pro-Text-Regular.otf
+
+    - family: SF-Pro-Text-Bold
+      fonts:
+        - asset: assets/fonts/SF-Pro-Text-Bold.otf
+
+    - family: Calibre-Semibold
+      fonts:
+        - asset: assets/fonts/Calibre Semibold.otf
+
+    - family: CustomIcons
+      fonts:
+        - asset: assets/fonts/custom_icons.ttf
