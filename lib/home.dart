@@ -74,14 +74,19 @@ class _MyHomePageState extends State<MyHomePage> {
 //              '$_counter',
 //              style: Theme.of(context).textTheme.display1,
 //            ),
-            RaisedButton(
-              child: Text("pointer demo"),
-
-              colorBrightness: Brightness.dark,
+            FlatButton(
+              child: Text("gesture detector demo"),
               onPressed: () {
-                Navigator.pushNamed(context, "pointer_demo");
+                Navigator.pushNamed(context, "gesture_detector_demo");
               },
             ),
+//            RaisedButton(
+//              child: Text("pointer demo"),
+//              colorBrightness: Brightness.dark,
+//              onPressed: () {
+//                Navigator.pushNamed(context, "pointer_demo");
+//              },
+//            ),
 //            FlatButton(
 //              child: Text("inherited demo"),
 //              onPressed: () {
