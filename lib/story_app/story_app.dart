@@ -11,13 +11,21 @@ class StoryApp extends StatefulWidget {
 
 class _StoryAppState extends State<StoryApp> {
   var currentPage = images.length - 1.0;
+  var currentPage2 = images.length - 1.0;
 
   @override
   Widget build(BuildContext context) {
     PageController controller = PageController(initialPage: images.length - 1);
+    PageController controller2 = PageController(initialPage: images.length - 1);
     controller.addListener(() {
       setState(() {
         currentPage = controller.page;
+      });
+    });
+
+    controller2.addListener(() {
+      setState(() {
+        currentPage2 = controller2.page;
       });
     });
 
@@ -122,7 +130,7 @@ class _StoryAppState extends State<StoryApp> {
               ),
               Stack(
                 children: <Widget>[
-                  ScrollCardWidget(currentPage: currentPage.toInt()),
+                  ScrollCardWidget(currentPage),
                   Positioned.fill(
                     child: PageView.builder(
                       itemCount: images.length,
@@ -201,11 +209,11 @@ class _StoryAppState extends State<StoryApp> {
               ),
               Stack(
                 children: <Widget>[
-                  ScrollCardWidget(currentPage: currentPage.toInt()),
+                  ScrollCardWidget(currentPage2),
                   Positioned.fill(
                     child: PageView.builder(
                       itemCount: images.length,
-                      controller: controller,
+                      controller: controller2,
                       reverse: true,
                       itemBuilder: (context, index) {
                         return Container();
