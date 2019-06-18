@@ -39,6 +39,7 @@ import 'august5th/notification_demo.dart';
 import 'story_app/story_app.dart';
 import 'august5th_animation/base_demo.dart';
 import 'august5th_animation/hero_demo.dart';
+import 'august5th_animation/stagger_demo.dart';
 
 void main() => runApp(Application());
 //void main() {
@@ -103,6 +104,7 @@ class Application extends StatelessWidget {
         "story_app": (context) => StoryApp(),
         "animation_demo": (context) => ScaleAnimationRoute(),
         "hero_demo": (context) => HeroAnimationRoute(),
+        "stagger_demo": (context) => StaggerAnimationDemoRouter(),
       },
       home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
