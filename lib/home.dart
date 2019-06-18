@@ -76,32 +76,37 @@ class _MyHomePageState extends State<MyHomePage> {
 //              '$_counter',
 //              style: Theme.of(context).textTheme.display1,
 //            ),
-
             FlatButton(
-              child: Text("custom route animation"),
+              child: Text("hero demo"),
               onPressed: () {
-//                Navigator.push(context, CupertinoPageRoute(
-//                  builder: (context) {
-//                    return CustomRouteAnimation();
-//                  },
-//                ));
-//                Navigator.push(
-//                    context,
-//                    PageRouteBuilder(
-//                      transitionDuration: Duration(milliseconds: 500),
-//                      pageBuilder: (context, animation, secondaryAnimation) {
-//                        return FadeTransition(
-//                          opacity: animation,
-//                          child: CustomRouteAnimation(),
-//                        );
-//                      },
-//                    ),
-//                );
-                Navigator.push(context, FadeRoute(builder: (context) {
-                  return CustomRouteAnimation();
-                }));
+                Navigator.pushNamed(context, "hero_demo");
               },
             ),
+//            FlatButton(
+//              child: Text("custom route animation"),
+//              onPressed: () {
+////                Navigator.push(context, CupertinoPageRoute(
+////                  builder: (context) {
+////                    return CustomRouteAnimation();
+////                  },
+////                ));
+////                Navigator.push(
+////                    context,
+////                    PageRouteBuilder(
+////                      transitionDuration: Duration(milliseconds: 500),
+////                      pageBuilder: (context, animation, secondaryAnimation) {
+////                        return FadeTransition(
+////                          opacity: animation,
+////                          child: CustomRouteAnimation(),
+////                        );
+////                      },
+////                    ),
+////                );
+//                Navigator.push(context, FadeRoute(builder: (context) {
+//                  return CustomRouteAnimation();
+//                }));
+//              },
+//            ),
 //            FlatButton(
 //              child: Text("animation demo"),
 //              onPressed: () {
