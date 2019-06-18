@@ -37,6 +37,7 @@ import 'august5th_widget/pointer_demo.dart';
 import 'august5th_widget/gesture_detector_demo.dart';
 import 'august5th/notification_demo.dart';
 import 'story_app/story_app.dart';
+import 'august5th_animation/base_demo.dart';
 
 void main() => runApp(Application());
 //void main() {
@@ -99,6 +100,7 @@ class Application extends StatelessWidget {
         "gesture_detector_demo": (context) => GestureDetectorDemoRoute(),
         "notification_demo": (context) => NotificationRoute(),
         "story_app": (context) => StoryApp(),
+        "animation_demo": (context) => ScaleAnimationRoute(),
       },
       home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
