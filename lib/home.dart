@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
+import 'package:flutter/cupertino.dart';
+import 'august5th_animation/custom_route_animation.dart';
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
@@ -74,18 +76,44 @@ class _MyHomePageState extends State<MyHomePage> {
 //              '$_counter',
 //              style: Theme.of(context).textTheme.display1,
 //            ),
+
             FlatButton(
-              child: Text("animation demo"),
+              child: Text("custom route animation"),
               onPressed: () {
-                Navigator.pushNamed(context, "animation_demo");
+//                Navigator.push(context, CupertinoPageRoute(
+//                  builder: (context) {
+//                    return CustomRouteAnimation();
+//                  },
+//                ));
+//                Navigator.push(
+//                    context,
+//                    PageRouteBuilder(
+//                      transitionDuration: Duration(milliseconds: 500),
+//                      pageBuilder: (context, animation, secondaryAnimation) {
+//                        return FadeTransition(
+//                          opacity: animation,
+//                          child: CustomRouteAnimation(),
+//                        );
+//                      },
+//                    ),
+//                );
+                Navigator.push(context, FadeRoute(builder: (context) {
+                  return CustomRouteAnimation();
+                }));
               },
             ),
 //            FlatButton(
-//              child: Text("story app"),
+//              child: Text("animation demo"),
 //              onPressed: () {
-//                Navigator.pushNamed(context, "story_app");
+//                Navigator.pushNamed(context, "animation_demo");
 //              },
 //            ),
+            FlatButton(
+              child: Text("story app"),
+              onPressed: () {
+                Navigator.pushNamed(context, "story_app");
+              },
+            ),
 //            FlatButton(
 //              child: Text("notificaiton demo"),
 //              onPressed: () {
